@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/output.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="nav">
+    <ul class="list">
+      <li><a href="#" class="li-item">Product</a></li>
+      <li><a href="#" class="li-item">Features</a></li>
+      <li><a href="#" class="li-item">Marketplace</a></li>
+      <li><a href="#" class="li-item">Company</a></li>
+    </ul>
+    <div class="absolute right-10">
+      <button id="theme-toggle" type="button" class="theme-button">
+        <svg id="theme-toggle-dark-icon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg>
+        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+            fill-rule="evenodd" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <a href="login.html"
+        class="text-gray-700 hover:text-black dark:hover:text-indigo-400  dark:text-white relative bottom-0.5">Log
+        in
+        →</a>
+    </div>
+  </nav>
+  <button id="menu-bar" class="theme-button md:hidden absolute right-5 top-4 z-10">
+    <svg id="bar-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6 md:hidden"
+      viewBox="0 0 50 50">
+      <path
+        d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z">
+      </path>
+    </svg>
+    <svg id="cross-icon" class="w-6 h-6 hidden md:hidden" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 122.88 122.88">
+      <path
+        d="M6,6H6a20.53,20.53,0,0,1,29,0l26.5,26.49L87.93,6a20.54,20.54,0,0,1,29,0h0a20.53,20.53,0,0,1,0,29L90.41,61.44,116.9,87.93a20.54,20.54,0,0,1,0,29h0a20.54,20.54,0,0,1-29,0L61.44,90.41,35,116.9a20.54,20.54,0,0,1-29,0H6a20.54,20.54,0,0,1,0-29L32.47,61.44,6,34.94A20.53,20.53,0,0,1,6,6Z" />
+    </svg>
+  </button>
+  <nav id="vertical-nav" class="vert-nav hidden md:hidden">
+    <ul class="flex flex-col space-y-4 divide-y-1  divide-gray-200">
+      <li class="li-item"><a href="#">Product</a></li>
+      <li class="li-item"><a href="#">Features</a></li>
+      <li class="li-item"><a href="#">Marketplace</a></li>
+      <li class="li-item"><a href="#">Company</a></li>
+      <li id="dark-text" class="li-item"><a href="#">Dark Mode</a></li>
+      <li id="light-text" class="hidden li-item"><a href="#">Light Mode</a></li>
+      <li class="li-item"><a href="login.html">Log in →</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- content -->
+  <div class="m-auto pt-20 mt-54 lg:mt-72 w-full dark:text-white">
+    <div class="w-full text-center">
+      <button class="rounded-4xl border p-2 border-gray-400 text-sm mb-8">Announcing our next round of finding.
+        <span class="text-indigo-700">Read more
+          →</span></button>
+      <h1 class="font-bold text-4xl md:text-5xl w-10/12 md:w-6/12 lg:w-4/12 m-auto">Data to enrich your online business
+      </h1>
+      <p class="mt-6 text-gray-600 dark:text-gray-400 w-9/12 sm:w-10/12 md:w-8/12 lg:w-5/12 m-auto">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      </p>
+
+      <div class="mt-8 space-x-4 w-6/12 md:w-6/12 lg:w-4/12 m-auto">
+        <button class="bg-indigo-500 text-white px-4 py-2 rounded-lg">Get started</button>
+        <a href="#" class="text-black dark:text-white">Learn more →</a>
+      </div>
+    </div>
+
+    <div class="w-full flex flex-wrap justify-center mt-52">
+      <div class="w-full text-center">
+        <h3 class="text-indigo-600 text-lg mb-4">Deploy faster</h3>
+        <h1 class="text-4xl md:text-5xl w-10/12 md:w-6/12 lg:w-4/12 m-auto font-bold">Everything you need to deploy your
+          app</h1>
+        <p class="mt-6 text-gray-600 dark:text-gray-400 w-9/12 sm:w-10/12 md:w-8/12 lg:w-5/12 m-auto">
+          Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
+          Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
+          In mi viverra elit nunc.
+        </p>
+      </div>
+      <div class="features-section pl-20">
+        <div class="features">
+          <a href="" class="icons-features">
+            <svg fill="currentColor" class="w-6 h-6 m-auto" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M1451.06 557.975C1456.76 557.082 1462.44 556.191 1468.24 556.191C1717.38 556.191 1920 761.334 1920 1013.33C1920 1265.33 1717.38 1470.48 1468.24 1470.48H1016.47V1094.13L1202.37 1282.36L1282.33 1201.45L960 875.391L637.666 1201.45L717.628 1282.36L903.529 1094.13V1470.48H395.294C177.318 1470.48 0 1291.05 0 1070.48C0 849.905 177.318 670.477 395.294 670.477C416.188 670.477 436.631 673.22 456.847 676.534C482.598 417.105 697.073 213.334 960 213.334C1181.82 213.334 1368.85 358.705 1438.08 559.62C1442.45 559.325 1446.76 558.649 1451.06 557.975ZM1016.47 1813.33H903.53V1470.48H1016.47V1813.33Z" />
+            </svg>
+          </a>
+          <div class="px-4 p-b-4 inline w-10/12 ">
+            <h5 class="mb-2 text-slate-800 font-semibold dark:text-neutral-50">
+              Push to deploy
+            </h5>
+            <p class="text-slate-600 leading-normal font-light dark:text-neutral-400">
+              The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can
+              enjoy the main night life in Barcelona.
+            </p>
+          </div>
+        </div>
+        <div class="features">
+          <button class="icons-features">
+            <svg fill="transparent" class="w-6 h-6 m-auto text-cyan-50" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 14.5V16.5M7 10.0288C7.47142 10 8.05259 10 8.8 10H15.2C15.9474 10 16.5286 10 17 10.0288M7 10.0288C6.41168 10.0647 5.99429 10.1455 5.63803 10.327C5.07354 10.6146 4.6146 11.0735 4.32698 11.638C4 12.2798 4 13.1198 4 14.8V16.2C4 17.8802 4 18.7202 4.32698 19.362C4.6146 19.9265 5.07354 20.3854 5.63803 20.673C6.27976 21 7.11984 21 8.8 21H15.2C16.8802 21 17.7202 21 18.362 20.673C18.9265 20.3854 19.3854 19.9265 19.673 19.362C20 18.7202 20 17.8802 20 16.2V14.8C20 13.1198 20 12.2798 19.673 11.638C19.3854 11.0735 18.9265 10.6146 18.362 10.327C18.0057 10.1455 17.5883 10.0647 17 10.0288M7 10.0288V8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8V10.0288"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="px-4 p-b-4 inline w-10/12">
+            <h5 class="mb-2 text-slate-800 font-semibold dark:text-neutral-50">
+              SSL Certificates
+            </h5>
+            <p class="text-slate-600 leading-normal font-light dark:text-neutral-400">
+              The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can
+              enjoy the main night life in Barcelona.
+            </p>
+          </div>
+        </div>
+        <div class="features">
+          <button class="icons-features">
+            <svg fill="currentColor" class="w-5 h-5 m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1,12A11,11,0,0,1,17.882,2.7l1.411-1.41A1,1,0,0,1,21,2V6a1,1,0,0,1-1,1H16a1,1,0,0,1-.707-1.707l1.128-1.128A8.994,8.994,0,0,0,3,12a1,1,0,0,1-2,0Zm21-1a1,1,0,0,0-1,1,9.01,9.01,0,0,1-9,9,8.9,8.9,0,0,1-4.42-1.166l1.127-1.127A1,1,0,0,0,8,17H4a1,1,0,0,0-1,1v4a1,1,0,0,0,.617.924A.987.987,0,0,0,4,23a1,1,0,0,0,.707-.293L6.118,21.3A10.891,10.891,0,0,0,12,23,11.013,11.013,0,0,0,23,12,1,1,0,0,0,22,11Z" />
+            </svg>
+          </button>
+          <div class="px-4 p-b-4 inline w-10/12">
+            <h5 class="mb-2 text-slate-800 font-semibold dark:text-neutral-50">
+              Simple Queues
+            </h5>
+            <p class="text-slate-600 leading-normal font-light dark:text-neutral-400">
+              The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can
+              enjoy the main night life in Barcelona.
+            </p>
+          </div>
+        </div>
+        <div class="features">
+          <button class="icons-features">
+            <svg class="w-6 h-6 m-auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.80688 18.5304C5.82459 18.5005 5.84273 18.4709 5.8613 18.4413C7.2158 16.2881 7.99991 13.7418 7.99991 11C7.99991 8.79086 9.79077 7 11.9999 7C14.209 7 15.9999 8.79086 15.9999 11C15.9999 12.017 15.9307 13.0186 15.7966 14M13.6792 20.8436C14.2909 19.6226 14.7924 18.3369 15.1707 17M19.0097 18.132C19.6547 15.8657 20 13.4732 20 11C20 6.58172 16.4183 3 12 3C10.5429 3 9.17669 3.38958 8 4.07026M3 15.3641C3.64066 14.0454 4 12.5646 4 11C4 9.54285 4.38958 8.17669 5.07026 7M11.9999 11C11.9999 14.5172 10.9911 17.7988 9.24707 20.5712"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="px-4 p-b-4 inline w-10/12">
+            <h5 class="mb-2 text-slate-800 font-semibold dark:text-neutral-50">
+              Advanced Security
+            </h5>
+            <p class="text-slate-600 leading-normal font-light dark:text-neutral-400">
+              The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can
+              enjoy the main night life in Barcelona.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-40 py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Simple no-tricks pricing</h2>
+          <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-neutral-400">Pay now to get paid every month and get
+            your money back.</p>
+        </div>
+        <div class="pricing-con">
+          <div class="p-8 sm:p-10 lg:flex-auto">
+            <h3 class="text-2xl font-bold tracking-tight">Lifetime membership</h3>
+            <p class="mt-6 text-base leading-7 text-gray-600 dark:text-neutral-400">Get lifetime membership and helps if
+              needed and get free
+              meals .</p>
+            <div class="mt-10 flex items-center gap-x-4">
+              <h4 class="flex-none text-sm font-semibold leading-6 text-blue-600">What’s included</h4>
+              <div class="h-px flex-auto bg-gray-400"></div>
+            </div>
+            <ul role="list" class="list-pricing ">
+              <li class="flex gap-x-3 dark:text-neutral-400">
+                <svg class="h-6 w-5 text-blue-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd" />
+                </svg>
+                Private forum access
+              </li>
+              <li class="flex gap-x-3 dark:text-neutral-400">
+                <svg class="h-6 w-5 flex-none text-blue-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd" />
+                </svg>
+                Member resources
+              </li>
+              <li class="flex gap-x-3 dark:text-neutral-400">
+                <svg class="h-6 w-5 flex-none text-blue-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd" />
+                </svg>
+                Entry to annual conference
+              </li>
+              <li class="flex gap-x-3 dark:text-neutral-400">
+                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor"
+                  aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd" />
+                </svg>
+                Official member t-shirt
+              </li>
+            </ul>
+          </div>
+          <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+            <div
+              class="rounded-2xl bg-gray-100/40 dark:bg-white/20 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+              <div class="mx-auto max-w-xs px-8">
+                <p class="text-base font-semibold text-gray-600 dark:text-neutral-50">Pay once, own it forever</p>
+                <p class="mt-6 flex items-baseline justify-center gap-x-2 dark:text-neutral-50">
+                  <span class="text-5xl font-bold tracking-tight text-gray-900 dark:text-neutral-50">$350</span>
+                  <span
+                    class="text-sm font-semibold leading-6 tracking-wide text-gray-600 dark:text-neutral-50">USD</span>
+                </p>
+                <a href="#"
+                  class="mt-10 block w-full rounded-md bg-indigo-500 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-indigo-500">Get
+                  access</a>
+                <p class="mt-6 text-xs leading-5 text-gray-600 dark:text-neutral-400">Invoices and receipts available
+                  for easy company
+                  reimbursement</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+      <img src="Images/navImage.avif" alt=""
+        class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
+      <div class="mx-auto md:ml-40 max-w-7xl">
+        <div class="mx-auto max-w-2xl lg:mx-0">
+          <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Work with us</h2>
+          <p class="mt-6 text-lg leading-8 text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+          <div
+            class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+            <a href="#">Open roles <span aria-hidden="true">&rarr;</span></a>
+            <a href="#">Internship program <span aria-hidden="true">&rarr;</span></a>
+            <a href="#">Our values <span aria-hidden="true">&rarr;</span></a>
+            <a href="#">Meet our leadership <span aria-hidden="true">&rarr;</span></a>
+          </div>
+          <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="flex flex-col-reverse">
+              <dt class="text-base leading-7 text-gray-300">Offices worldwide</dt>
+              <dd class="text-2xl font-bold leading-9 tracking-tight text-white">12</dd>
+            </div>
+            <div class="flex flex-col-reverse">
+              <dt class="text-base leading-7 text-gray-300">Full-time colleagues</dt>
+              <dd class="text-2xl font-bold leading-9 tracking-tight text-white">300+</dd>
+            </div>
+            <div class="flex flex-col-reverse">
+              <dt class="text-base leading-7 text-gray-300">Hours per week</dt>
+              <dd class="text-2xl font-bold leading-9 tracking-tight text-white">40</dd>
+            </div>
+            <div class="flex flex-col-reverse">
+              <dt class="text-base leading-7 text-gray-300">Paid time off</dt>
+              <dd class="text-2xl font-bold leading-9 tracking-tight text-white">Unlimited</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="src/script.js"></script>
+</body>
+
+</html>

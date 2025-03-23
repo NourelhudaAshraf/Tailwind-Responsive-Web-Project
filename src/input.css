@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.li-item {
+  @apply text-gray-700 dark:text-white hover:text-black dark:hover:text-indigo-400 w-10/12;
+}
+.list {
+  @apply flex flex-wrap space-x-8 dark:text-neutral-50;
+}
+.nav {
+  @apply hidden md:flex md:flex-wrap absolute top-0 w-full shadow-md justify-center items-center py-6 px-10 font-semibold;
+}
+.vert-nav {
+  @apply absolute top-0 w-full shadow-md shadow-amber-50 dark:shadow-xs dark:shadow-blue-600 py-6 px-10 font-semibold;
+}
+.theme-button {
+  @apply text-gray-700 hover:text-black dark:text-neutral-50 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5;
+}
+body {
+  @apply bg-gradient-to-br from-purple-300 to-purple-100 dark:from-black dark:to-blue-950;
+}
+.features-section {
+  @apply w-full lg:w-8/12 text-left flex flex-wrap mt-8 md:mt-16;
+}
+.features {
+  @apply flex flex-wrap my-6 w-full md:w-6/12;
+}
+.icons-features {
+  @apply rounded-lg text-sm p-2 bg-blue-600 text-cyan-50 h-10;
+}
+.pricing-con {
+  @apply mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-400 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none;
+}
+.list-pricing {
+  @apply mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6;
+}
+input {
+  @apply w-full mb-6 pl-2 h-10 bg-white/70 dark:bg-white/90 placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded focus:shadow-md transition duration-300 focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm;
+}
+label {
+  @apply block mb-1 text-lg text-slate-800 dark:text-white;
+}
